@@ -39,7 +39,7 @@ except:
 # Définitions fonctions et classes
 class Etoile():
     """
-        Class contentant pour une étoile donnée tous les attributs du
+        Classe contentant pour une étoile donnée tous les attributs du
         catalogue.
     """
     def __init__(self):
@@ -68,10 +68,10 @@ class Etoile():
         chaine += "pmDE : " + self.pmDE
         return chaine
 
-def coordonnees(HR, A):
+def coordonnees(HR, AJ):
     """
-        Retourne les coordonnées d'une étoile en fonction de l'année.
-        Prise en compte de la position 2000.0 et du mouvement propre.
+        Retourne les coordonnées d'une étoile en fonction de l'année julienne
+        en tenant compte de la position 2000.0 et du mouvement propre.
     """
     cat = etoile_data(HR)
 
